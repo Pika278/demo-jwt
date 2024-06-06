@@ -1,8 +1,8 @@
 package com.example.securityJwtDemo.controller;
 
-import com.example.securityJwtDemo.CustomException;
-import com.example.securityJwtDemo.configuration.CustomUserDetails;
-import com.example.securityJwtDemo.configuration.JwtGenerator;
+import com.example.securityJwtDemo.exception.CustomException;
+import com.example.securityJwtDemo.security.CustomUserDetails;
+import com.example.securityJwtDemo.security.JwtGenerator;
 import com.example.securityJwtDemo.dto.request.AddUserRequest;
 import com.example.securityJwtDemo.dto.request.LoginRequest;
 import com.example.securityJwtDemo.dto.request.RefreshTokenRequest;
@@ -11,8 +11,6 @@ import com.example.securityJwtDemo.entity.RefreshToken;
 import com.example.securityJwtDemo.entity.Users;
 import com.example.securityJwtDemo.repository.RefreshTokenRepository;
 import com.example.securityJwtDemo.repository.UserRepository;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,7 +18,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

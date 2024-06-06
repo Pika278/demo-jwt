@@ -1,6 +1,6 @@
-package com.example.securityJwtDemo.configuration;
+package com.example.securityJwtDemo.security;
 
-import com.example.securityJwtDemo.CustomException;
+import com.example.securityJwtDemo.exception.CustomException;
 import com.example.securityJwtDemo.entity.RefreshToken;
 import com.example.securityJwtDemo.repository.RefreshTokenRepository;
 import com.example.securityJwtDemo.repository.UserRepository;

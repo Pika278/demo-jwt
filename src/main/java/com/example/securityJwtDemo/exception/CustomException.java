@@ -1,4 +1,4 @@
-package com.example.securityJwtDemo;
+package com.example.securityJwtDemo.exception;
 
 public class CustomException extends RuntimeException{
     public CustomException(String message) {

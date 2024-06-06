@@ -1,5 +1,6 @@
-package com.example.securityJwtDemo.configuration;
+package com.example.securityJwtDemo.service;
 
+import com.example.securityJwtDemo.security.CustomUserDetails;
 import com.example.securityJwtDemo.entity.Users;
 import com.example.securityJwtDemo.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
