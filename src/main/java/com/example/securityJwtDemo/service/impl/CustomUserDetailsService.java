@@ -1,4 +1,4 @@
-package com.example.securityJwtDemo.service;
+package com.example.securityJwtDemo.service.impl;
 
 import com.example.securityJwtDemo.security.CustomUserDetails;
 import com.example.securityJwtDemo.entity.Users;
